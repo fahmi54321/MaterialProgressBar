@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/progress"
+        android:layout_above="@id/btnShow"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        app:mlpb_show_arrow="true"
+        app:mlpb_arrow_height="5dp"
+        app:mlpb_arrow_width="10dp"
+        app:mlpb_progress_stoke_width="2dp"
+        app:mlpb_progress_text_visibility="visible"></com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Show Dialog"
+        style="@style/Widget.AppCompat.Button.Colored"></androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>
